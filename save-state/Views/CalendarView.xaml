@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar" x:Class="save_state.Views.CalendarView">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HeightRequest="200">
+            <controls:Calendar x:Name="_calendar" 
+                               DatesFontSize="9" 
+                               TitleLabelFontSize="11" 
+                               TitleLeftArrowTextColor="Aqua"
+                               TitleRightArrowTextColor="Aqua"
+                               WeekdaysFontSize="9" 
+                               Padding="10,0,10,0" 
+                               StartDay="Sunday" 
+                               BorderColor="White"
+                               SelectedBorderWidth="2" 
+                               SelectedBorderColor="Blue"
+                               SelectedFontSize="12"
+                               DisabledBorderColor="Black" 
+                               TitleLabelTextColor="Purple" 
+                               TitleLabelFormat="yyyy/MM" />
+            <Label Text=" yyyy/MM/dd" FontSize="9" BackgroundColor="Silver" 
+                   Margin="2,2,2,2" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" />
+            <ScrollView>
+                <ListView HeightRequest="150">
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>mono</x:String>
+                            <x:String>monodroid</x:String>
+                            <x:String>monotouch</x:String>
+                            <x:String>monorail</x:String>
+                            <x:String>monodevelop</x:String>
+                            <x:String>monotone</x:String>
+                            <x:String>monopoly</x:String>
+                            <x:String>monomodal</x:String>
+                            <x:String>mononucleosis</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
