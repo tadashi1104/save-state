@@ -11,5 +11,11 @@ namespace save_state.Views
         {
             InitializeComponent();
         }
+
+        private void OnDateClickHandler(object sender, EventArgs e)
+        {
+            _listHeader.Text = _calendar.SelectedDate?.ToString("yyyy/MM/dd (ddd)");
+        }
+
     }
 }

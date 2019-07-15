@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="save_state.Views.RegisterView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="yyyy/mm/dd (ddd)" FontSize="15" BackgroundColor="Silver" 
+                   Margin="2,2,2,2" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" />
+            
+            <ScrollView>
+                <StackLayout Padding="15">
+                    <Label Text="気分" FontSize="11" />
+                    <StackLayout Orientation="Horizontal" Padding="5" >
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="最高" BackgroundColor="#ffa900" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="良い" BackgroundColor="#ff8200" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="普通" BackgroundColor="#ff2d00" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="悪い" BackgroundColor="#ff1800" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="最低" BackgroundColor="#ff0000" FontSize="9" />
+                    </StackLayout>
+                    <Label Text="体調" FontSize="11" />
+                    <StackLayout Orientation="Horizontal" Padding="5" >
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="最高" BackgroundColor="#ffa900" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="良い" BackgroundColor="#ff8200" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="普通" BackgroundColor="#ff2d00" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="悪い" BackgroundColor="#ff1800" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="最低" BackgroundColor="#ff0000" FontSize="9" />
+                    </StackLayout>
+                    <Label Text="朝食" FontSize="11" />
+                    <StackLayout Orientation="Horizontal" Padding="5" >
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="あり" BackgroundColor="#ffa900" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="無し" BackgroundColor="#ff0000" FontSize="9" />
+                    </StackLayout>
+                    <Label Text="昼食" FontSize="11" />
+                    <StackLayout Orientation="Horizontal" Padding="5" >
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="あり" BackgroundColor="#ffa900" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="無し" BackgroundColor="#ff0000" FontSize="9" />
+                    </StackLayout>
+                    <Label Text="夕食" FontSize="11" />
+                    <StackLayout Orientation="Horizontal" Padding="5" >
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="あり" BackgroundColor="#ffa900" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="無し" BackgroundColor="#ff0000" FontSize="9" />
+                    </StackLayout>
+                    <Label Text="間食" FontSize="11" />
+                    <StackLayout Orientation="Horizontal" Padding="5" >
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="あり" BackgroundColor="#ffa900" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="無し" BackgroundColor="#ff0000" FontSize="9" />
+                    </StackLayout>
+                    <Label Text="生理中" FontSize="11" />
+                    <StackLayout Orientation="Horizontal" Padding="5" >
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="はい" BackgroundColor="#ffa900" FontSize="9" />
+                        <Button HeightRequest="50" WidthRequest="40"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                                Text="いいえ" BackgroundColor="#ff0000" FontSize="9" />
+                    </StackLayout>
+                    <Label Text="良かったこと（+ボタンで増やせる）" FontSize="11" />
+                    <StackLayout Padding="5">
+                        <Entry Text="" 
+                           FontSize="9" 
+                           WidthRequest="175"
+                           Placeholder="クララが立った" />
+                        <Entry Text="" 
+                           FontSize="9" 
+                           WidthRequest="175"
+                           Placeholder="ソロモンに帰ってきた" />
+                        <Entry Text="" 
+                           FontSize="9" 
+                           WidthRequest="175"
+                           Placeholder="俺がその幻想をぶち殺す" />
+                    </StackLayout>
+                    <Label Text="悪かったこと（+ボタンで増やせる）" FontSize="11" />
+                    <StackLayout Padding="5">
+                        <Entry Text="" 
+                           FontSize="9" 
+                           WidthRequest="175"
+                           Placeholder="感染レベルがLevel 5" />
+                        <Entry Text="" 
+                           FontSize="9" 
+                           WidthRequest="175"
+                           Placeholder="信じてくれず、また死に戻り" />
+                        <Entry Text="" 
+                           FontSize="9" 
+                           WidthRequest="175"
+                           Placeholder="何股もかけて殺された" />
+                    </StackLayout>
+                    <Label Text="その他（なんでも！）" FontSize="11" />
+                    <Editor Text="" 
+                            FontSize="9" 
+                            WidthRequest="175"
+                            HeightRequest="100"
+                            Placeholder="あいうえお
+                                        &#xD;&#xA;かきくけこ
+                                        &#xD;&#xA;さしすせそ
+                                        &#xD;&#xA;たちつてと
+                                        &#xD;&#xA;なにぬねの" />
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

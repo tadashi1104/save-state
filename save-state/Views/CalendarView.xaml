@@ -4,11 +4,13 @@
         <StackLayout Orientation="Vertical" HeightRequest="200">
             <controls:Calendar x:Name="_calendar" 
                                DatesFontSize="9" 
-                               TitleLabelFontSize="11" 
-                               TitleLeftArrowTextColor="Aqua"
-                               TitleRightArrowTextColor="Aqua"
+                               TitleLabelFontSize="15" 
+                               TitleLeftArrowTextColor="Red"
+                               TitleRightArrowTextColor="Red"
+                               TitleLeftArrowFontSize="15"
+                               TitleRightArrowFontSize="15"
                                WeekdaysFontSize="9" 
-                               Padding="10,0,10,0" 
+                               Padding="5,0,5,0" 
                                StartDay="Sunday" 
                                BorderColor="White"
                                SelectedBorderWidth="2" 
@@ -16,8 +18,9 @@
                                SelectedFontSize="12"
                                DisabledBorderColor="Black" 
                                TitleLabelTextColor="Purple" 
-                               TitleLabelFormat="yyyy/MM" />
-            <Label Text=" yyyy/MM/dd" FontSize="9" BackgroundColor="Silver" 
+                               TitleLabelFormat="yyyy/MM" 
+                               DateClicked="OnDateClickHandler" />
+            <Label x:Name="_listHeader" FontSize="9" BackgroundColor="Silver" 
                    Margin="2,2,2,2" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" />
             <ScrollView>
                 <ListView HeightRequest="150">

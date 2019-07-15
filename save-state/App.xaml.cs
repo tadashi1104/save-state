@@ -11,7 +11,7 @@ namespace save_state
         {
             InitializeComponent();
 
-            MainPage = new CalendarView();
+            MainPage = new RegisterView();
         }
 
         protected override void OnStart()
