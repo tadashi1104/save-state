@@ -1,32 +1,34 @@
-﻿using System;
+﻿using Prism;
+using Prism.Ioc;
 using save_state.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using save_state.Services;
+using Prism.Unity;
+using savestate.ViewModels;
 
 namespace save_state
 {
-    public partial class App : Application
+    public partial class App
     {
-        public App()
+        /* 
+         * The Xamarin Forms XAML Previewer in Visual Studio uses System.Activator.CreateInstance.
+         * This imposes a limitation in which the App class must have a default constructor. 
+         * App(IPlatformInitializer initializer = null) cannot be handled by the Activator.
+         */
+        public App(IPlatformInitializer initializer = null) : base(initializer) { }
+
+        protected override async void OnInitialized()
         {
             InitializeComponent();
-
-            MainPage = new RegisterView();
+            await NavigationService.NavigateAsync("CalendarPage");
         }
 
-        protected override void OnStart()
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            // Handle when your app starts
-        }
-
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
-
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
+            containerRegistry.RegisterForNavigation<CalendarPage, CalendarPageViewModel>();
+            containerRegistry.RegisterForNavigation<RegisterPage, RegisterPageViewModel>();
         }
     }
 }

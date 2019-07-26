@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace save_state.Views
 {
-    public partial class RegisterView : ContentPage
+    public partial class RegisterPage : ContentPage
     {
-        public RegisterView()
+        public RegisterPage()
         {
             InitializeComponent();
         }
