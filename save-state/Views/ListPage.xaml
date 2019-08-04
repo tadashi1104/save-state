@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             NavigationPage.HasNavigationBar="false"
+             x:Class="save_state.Views.ListPage">
+    <StackLayout Padding="10">
+    <Label Text="aaa"/>
+    <ListView x:Name="_stateList"
+              IsGroupingEnabled="True"
+              GroupDisplayBinding="{Binding Month}" >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding DateTime}"
+                          Detail="{Binding Overview}" />
+                <!--<ViewCell>
+                    <StackLayout
+                        HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal">
+                        <StackLayout
+                            Orientation="Vertical">
+                            <Label Text="{Binding Date}"/>
+                            <Label Text="{Binding Time}"/>
+                        </StackLayout>
+                        <Label Text="{Binding Overview}"/>
+                    </StackLayout>
+                </ViewCell>-->
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    </StackLayout>
+</ContentPage>
