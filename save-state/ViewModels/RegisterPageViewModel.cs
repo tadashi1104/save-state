@@ -1,7 +1,7 @@
 ﻿using System;
 using Prism.Mvvm;
 
-namespace savestate.ViewModels
+namespace save_state.ViewModels
 {
     public class RegisterPageViewModel : BindableBase
     {

@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <RootNamespace>save_state</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -17,6 +18,7 @@
     <PackageReference Include="XamForms.Controls.Calendar" Version="1.1.1" />
     <PackageReference Include="ReactiveProperty" Version="6.0.3" />
     <PackageReference Include="Prism.Unity.Forms" Version="7.2.0.1367" />
+    <PackageReference Include="OxyPlot.Xamarin.Forms" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />

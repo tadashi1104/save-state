@@ -6,7 +6,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using save_state.Services;
 using Prism.Unity;
-using savestate.ViewModels;
+using save_state.ViewModels;
 
 namespace save_state
 {
