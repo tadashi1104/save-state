@@ -7,6 +7,7 @@ using Xamarin.Forms.Xaml;
 using save_state.Services;
 using Prism.Unity;
 using save_state.ViewModels;
+using System.Threading.Tasks;
 
 namespace save_state
 {
@@ -22,7 +23,8 @@ namespace save_state
         protected override async void OnInitialized()
         {
             InitializeComponent();
-            await NavigationService.NavigateAsync("ListPage");
+            // Task.Run(() => { NavigationService.NavigateAsync("ListPage"); });
+            await NavigationService.NavigateAsync("AnalysisPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -30,6 +32,7 @@ namespace save_state
             containerRegistry.RegisterForNavigation<CalendarPage, CalendarPageViewModel>();
             containerRegistry.RegisterForNavigation<RegisterPage, RegisterPageViewModel>();
             containerRegistry.RegisterForNavigation<ListPage, ListPageViewModel>();
+            containerRegistry.RegisterForNavigation<AnalysisPage, AnalysisViewModel>();
         }
     }
 }
