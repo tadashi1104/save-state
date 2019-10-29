@@ -5,13 +5,16 @@
              xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
              x:Class="save_state.Views.AnalysisPage">
 
-    <!--<ContentPage.BindingContext>
-        <local:AnalysisViewModel />
-    </ContentPage.BindingContext>-->
-
     <ContentPage.Content>
         <StackLayout Padding="10">
             <Label Text="Graph" />
+            <oxy:PlotView Model="{Binding plotModelGood}"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand" >
+                <oxy:PlotView.BindingContext>
+                    <local:AnalysisViewModel />
+                </oxy:PlotView.BindingContext>
+            </oxy:PlotView>
             <oxy:PlotView Model="{Binding plotModel}"
                           HorizontalOptions="FillAndExpand"
                           VerticalOptions="FillAndExpand" >
