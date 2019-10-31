@@ -12,20 +12,25 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Graph" />
-            <oxy:PlotView Model="{Binding plotModelGood}"
-                          HorizontalOptions="FillAndExpand"
-                          VerticalOptions="FillAndExpand" >
-            </oxy:PlotView>
-            <oxy:PlotView Model="{Binding plotModel}"
-                          HorizontalOptions="FillAndExpand"
-                          VerticalOptions="FillAndExpand" >
-            </oxy:PlotView>
-            <oxy:PlotView Model="{Binding plotModelComposite}"
-                          HorizontalOptions="FillAndExpand"
-                          VerticalOptions="FillAndExpand" >
-            </oxy:PlotView>
+                <ScrollView>
+                    <StackLayout>
+                        <oxy:PlotView Model="{Binding plotModelGood}"
+                                      HorizontalOptions="FillAndExpand"
+                                      VerticalOptions="FillAndExpand"
+                                      HeightRequest="150" >
+                        </oxy:PlotView>
+                        <oxy:PlotView Model="{Binding plotModel}"
+                                      HorizontalOptions="FillAndExpand"
+                                      VerticalOptions="FillAndExpand"
+                                      HeightRequest="150" >
+                        </oxy:PlotView>
+                        <oxy:PlotView Model="{Binding plotModelComposite}"
+                                      HorizontalOptions="FillAndExpand"
+                                      VerticalOptions="FillAndExpand"
+                                      HeightRequest="150" >
+                        </oxy:PlotView>
+                    </StackLayout>
+                </ScrollView>
         </StackLayout>
     </ContentPage.Content>
-
-    <s
 </ContentPage>
