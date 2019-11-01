@@ -103,16 +103,18 @@ namespace save_state.ViewModels
 
             var yaxisComposite1 = new LinearAxis();
             yaxisComposite1.Position = AxisPosition.Left;
-            yaxisComposite1.MajorGridlineStyle = LineStyle.Dot;
-            yaxisComposite1.MinorGridlineStyle = LineStyle.Dot;
+            yaxisComposite1.MajorGridlineStyle = LineStyle.None;
+            yaxisComposite1.MinorGridlineStyle = LineStyle.None;
+            yaxisComposite1.Key = "1";
             yaxisComposite1.FontSize = 8.0;
 
             var yaxisComposite2 = new LinearAxis();
             yaxisComposite2.Position = AxisPosition.Right;
             yaxisComposite2.Maximum = 5;
             yaxisComposite2.Minimum = 0;
-            yaxisComposite2.MajorGridlineStyle = LineStyle.Dot;
-            yaxisComposite2.MinorGridlineStyle = LineStyle.Dot;
+            yaxisComposite2.MajorGridlineStyle = LineStyle.None;
+            yaxisComposite2.MinorGridlineStyle = LineStyle.None;
+            yaxisComposite2.Key = "2";
             yaxisComposite2.FontSize = 8.0;
 
             var columnSeriesComposite = new ColumnSeries();
@@ -127,6 +129,7 @@ namespace save_state.ViewModels
             plotModelComposite.Axes.Add(xaxisComposite);
             plotModelComposite.Axes.Add(yaxisComposite1);
             plotModelComposite.Axes.Add(yaxisComposite2);
+            columnSeriesComposite.YAxisKey = "1";
             plotModelComposite.Series.Add(columnSeriesComposite);
             plotModelComposite.Series.Add(new LineSeries
             {
@@ -139,7 +142,8 @@ namespace save_state.ViewModels
                     new DataPoint(4, 3.4),
                     new DataPoint(5, 5.0),
                     new DataPoint(6, 1.2),
-                }
+                },
+                YAxisKey = "2"
             });
 
 
