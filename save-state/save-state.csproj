@@ -19,6 +19,7 @@
     <PackageReference Include="ReactiveProperty" Version="6.1.3" />
     <PackageReference Include="Prism.Unity.Forms" Version="7.2.0.1367" />
     <PackageReference Include="OxyPlot.Xamarin.Forms" Version="1.0.0" />
+    <PackageReference Include="PublicHoliday" Version="2.0.7" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\" />

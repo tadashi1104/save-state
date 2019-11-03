@@ -7,29 +7,32 @@
              NavigationPage.HasNavigationBar="false"
              x:Class="save_state.Views.CalendarPage">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" HeightRequest="200">
-            <controls:Calendar x:Name="_calendar" 
-                               DatesFontSize="9" 
-                               TitleLabelFontSize="15" 
+        <StackLayout>
+            <controls:Calendar x:Name="_calendar"
+                               VerticalOptions="FillAndExpand"
+                               DatesFontSize="9"
+                               TitleLabelFontSize="14" 
                                TitleLeftArrowTextColor="Red"
                                TitleRightArrowTextColor="Red"
-                               TitleLeftArrowFontSize="15"
-                               TitleRightArrowFontSize="15"
-                               WeekdaysFontSize="9" 
-                               Padding="5,0,5,0" 
+                               TitleLeftArrowFontSize="14"
+                               TitleRightArrowFontSize="14"
+                               WeekdaysFontSize="9"
+                               WeekdaysFontAttributes="Bold"
+                               WeekdaysTextColor="Black"
+                               Padding="0,0,0,0" 
                                StartDay="Sunday" 
                                BorderColor="White"
                                SelectedBorderWidth="2" 
                                SelectedBorderColor="Blue"
-                               SelectedFontSize="12"
-                               DisabledBorderColor="Black" 
+                               DisabledBorderColor="LightGray"
+                               SelectedFontSize="10"
                                TitleLabelTextColor="Purple" 
                                TitleLabelFormat="yyyy/MM" 
                                DateClicked="OnDateClickHandler" />
             <Label x:Name="_listHeader" FontSize="9" BackgroundColor="Silver" 
-                   Margin="2,2,2,2" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" />
+                   Margin="0,0,0,0" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" />
             <ScrollView>
-                <ListView HeightRequest="150">
+                <ListView HeightRequest="50" HasUnevenRows="True" RowHeight="20">
                     <ListView.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>mono</x:String>
