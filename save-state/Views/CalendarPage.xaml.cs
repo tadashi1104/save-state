@@ -15,8 +15,13 @@ namespace save_state.Views
 
             _calendar.OnEndRenderCalendar += (sender, e) =>
             {
-                (_calendar.Content as StackLayout).Children.Last().HeightRequest = 180;
+                (((_calendar.Content as StackLayout).Children.Last() as StackLayout)
+                    .Children.First() as StackLayout).Children.First().Margin = new Thickness(0, 0, 0, 5);
+                (((_calendar.Content as StackLayout).Children.Last() as StackLayout)
+                    .Children.First() as StackLayout).Children.First().HeightRequest = 20;
             };
+
+            
 
             // SetWeekend(2019);
             // SetHoliday(2019);

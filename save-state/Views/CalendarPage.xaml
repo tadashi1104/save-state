@@ -32,7 +32,7 @@
             <Label x:Name="_listHeader" FontSize="9" BackgroundColor="Silver" 
                    Margin="0,0,0,0" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" />
             <ScrollView>
-                <ListView HeightRequest="50" HasUnevenRows="True" RowHeight="20">
+                <ListView HeightRequest="120" HasUnevenRows="True" RowHeight="20">
                     <ListView.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>mono</x:String>
