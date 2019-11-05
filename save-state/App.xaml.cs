@@ -24,11 +24,12 @@ namespace save_state
         {
             InitializeComponent();
             // Task.Run(() => { NavigationService.NavigateAsync("ListPage"); });
-            await NavigationService.NavigateAsync("CalendarPage");
+            await NavigationService.NavigateAsync("RootPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterForNavigation<RootPage, RootPageViewModel>();
             containerRegistry.RegisterForNavigation<CalendarPage, CalendarPageViewModel>();
             containerRegistry.RegisterForNavigation<RegisterPage, RegisterPageViewModel>();
             containerRegistry.RegisterForNavigation<ListPage, ListPageViewModel>();

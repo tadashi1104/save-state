@@ -24,4 +24,26 @@
   <ItemGroup>
     <Folder Include="ViewModels\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\SSMasterDetailPage.xaml.cs" />
+    <Compile Remove="Views\SSMasterDetailPageDetail.xaml.cs" />
+    <Compile Remove="Views\SSMasterDetailPageMaster.xaml.cs" />
+    <Compile Remove="Views\SSMasterDetailPageMenuItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\MasterDetail\SSMasterDetailPageMaster.xaml.cs">
+      <DependentUpon>SSMasterDetailPageMaster.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\RootPage.xaml.cs">
+      <DependentUpon>RootPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\MasterDetailPage.xaml" />
+    <EmbeddedResource Remove="Views\MasterDetailPageDetail.xaml" />
+    <EmbeddedResource Remove="Views\MasterDetailPageMaster.xaml" />
+  </ItemGroup>
 </Project>
