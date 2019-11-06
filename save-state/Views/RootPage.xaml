@@ -2,13 +2,14 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-                  xmlns:Views="clr-namespace:save_state.Views" prism:ViewModelLocator.AutowireViewModel="True"
+                  xmlns:Views="clr-namespace:save_state.Views"
+                  prism:ViewModelLocator.AutowireViewModel="True"
                   x:Class="save_state.Views.RootPage"
                   IsPresented="{Binding IsPresented, Mode=TwoWay}">
   <MasterDetailPage.Master>
     <Views:MenuPage />
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
-    <ContentPage Title="Dummy" /> <!-- Dummy -->
+    <Views:CalendarPage />
   </MasterDetailPage.Detail>
 </MasterDetailPage>

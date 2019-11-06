@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:save_state.ViewModels"
              xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"
-             x:Class="save_state.Views.AnalysisPage">
+             x:Class="save_state.Views.AnalysisPage"
+             NavigationPage.HasNavigationBar="True">
 
     <ContentPage.BindingContext>
         <local:AnalysisViewModel></local:AnalysisViewModel>
