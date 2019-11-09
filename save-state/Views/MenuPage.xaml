@@ -6,16 +6,18 @@
   <StackLayout>
     <Label Text="Menu" 
            FontSize="18"
-           Margin="10,36,0,5"/>
+           Margin="10,5,0,5"/>
     <ListView ItemsSource="{Binding Menus}"
-              VerticalOptions="FillAndExpand"
+              VerticalOptions="CenterAndExpand"
               ItemSelected="ListViewMenu_ItemSelected">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>
             <StackLayout Orientation="Horizontal">
               <Label Text="{Binding Title}"
-                     HorizontalOptions="FillAndExpand" />
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="CenterAndExpand"
+                     Margin="15, 0, 0, 0"/>
             </StackLayout>
           </ViewCell>
         </DataTemplate>
