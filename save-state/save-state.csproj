@@ -29,6 +29,7 @@
     <Compile Remove="Views\SSMasterDetailPageDetail.xaml.cs" />
     <Compile Remove="Views\SSMasterDetailPageMaster.xaml.cs" />
     <Compile Remove="Views\SSMasterDetailPageMenuItem.cs" />
+    <Compile Remove="MainPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\MasterDetail\SSMasterDetailPageMaster.xaml.cs">
@@ -39,6 +40,9 @@
     </Compile>
     <Compile Update="Views\RootPage.xaml.cs">
       <DependentUpon>RootPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MyPage.xaml.cs">
+      <DependentUpon>MyPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

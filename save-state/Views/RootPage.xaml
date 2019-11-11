@@ -5,11 +5,12 @@
                   xmlns:Views="clr-namespace:save_state.Views"
                   prism:ViewModelLocator.AutowireViewModel="True"
                   x:Class="save_state.Views.RootPage"
-                  IsPresented="{Binding IsPresented, Mode=TwoWay}">
+                  IsPresented="{Binding IsPresented, Mode=TwoWay}"
+                  Title="Root">
   <MasterDetailPage.Master>
     <Views:MenuPage />
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
-    <Views:CalendarPage />
+    <Views:MyPage />
   </MasterDetailPage.Detail>
 </MasterDetailPage>

@@ -24,16 +24,19 @@ namespace save_state
         {
             InitializeComponent();
             // Task.Run(() => { NavigationService.NavigateAsync("ListPage"); });
-            await NavigationService.NavigateAsync("RootPage");
+            await NavigationService.NavigateAsync("NavigationPage/MainPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterForNavigation<MyPage>();
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<RootPage, RootPageViewModel>();
             containerRegistry.RegisterForNavigation<CalendarPage, CalendarPageViewModel>();
             containerRegistry.RegisterForNavigation<RegisterPage, RegisterPageViewModel>();
             containerRegistry.RegisterForNavigation<ListPage, ListPageViewModel>();
             containerRegistry.RegisterForNavigation<AnalysisPage, AnalysisViewModel>();
+            containerRegistry.RegisterForNavigation<NavigationPage>();
         }
     }
 }

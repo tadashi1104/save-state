@@ -4,7 +4,9 @@
              xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar" 
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="save_state.Views.CalendarPage">
+             x:Class="save_state.Views.CalendarPage"
+             NavigationPage.HasNavigationBar="True"
+             Title="Calendar">
     <ContentPage.Content>
         <StackLayout>
             <controls:Calendar x:Name="_calendar"

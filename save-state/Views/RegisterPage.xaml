@@ -4,7 +4,8 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              NavigationPage.HasNavigationBar="false"
-             x:Class="save_state.Views.RegisterPage">
+             x:Class="save_state.Views.RegisterPage"
+             Title="Register">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="yyyy/mm/dd (ddd)" FontSize="15" BackgroundColor="Silver" 
