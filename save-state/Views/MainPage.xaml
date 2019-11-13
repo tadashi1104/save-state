@@ -4,8 +4,7 @@
             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
             xmlns:Views="clr-namespace:save_state.Views"
             prism:ViewModelLocator.AutowireViewModel="True"
-            x:Class="save_state.Views.MainPage"
-            NavigationPage.HasNavigationBar="False">
+            x:Class="save_state.Views.MainPage" >
     <TabbedPage.Children>
         <Views:CalendarPage />
         <Views:ListPage />

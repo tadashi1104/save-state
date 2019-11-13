@@ -6,11 +6,11 @@
                   prism:ViewModelLocator.AutowireViewModel="True"
                   x:Class="save_state.Views.RootPage"
                   IsPresented="{Binding IsPresented, Mode=TwoWay}"
-                  Title="Root">
+                  Title="Root" >
   <MasterDetailPage.Master>
     <Views:MenuPage />
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
-    <Views:MyPage />
+    <Views:MainPage />
   </MasterDetailPage.Detail>
 </MasterDetailPage>

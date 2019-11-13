@@ -5,8 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="save_state.Views.MyPage"
              Title="MyPage"
-             NavigationPage.HasNavigationBar="True"
-             >
+             NavigationPage.HasNavigationBar="False" >
     <ContentPage.Content>
         <Label Text="Hello, World."></Label>
     </ContentPage.Content>

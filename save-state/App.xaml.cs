@@ -24,7 +24,7 @@ namespace save_state
         {
             InitializeComponent();
             // Task.Run(() => { NavigationService.NavigateAsync("ListPage"); });
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync("NavigationPage/RootPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
