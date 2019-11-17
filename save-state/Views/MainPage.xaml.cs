@@ -1,4 +1,6 @@
 ﻿
+using System;
+using System.Collections.Specialized;
 using Xamarin.Forms;
 
 namespace save_state.Views
@@ -9,5 +11,6 @@ namespace save_state.Views
         {
             InitializeComponent();
         }
+
     }
 }

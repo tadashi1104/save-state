@@ -10,7 +10,4 @@
   <MasterDetailPage.Master>
     <Views:MenuPage />
   </MasterDetailPage.Master>
-  <MasterDetailPage.Detail>
-    <Views:MainPage />
-  </MasterDetailPage.Detail>
 </MasterDetailPage>

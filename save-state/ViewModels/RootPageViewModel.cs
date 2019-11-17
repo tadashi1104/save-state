@@ -53,7 +53,7 @@ namespace save_state.ViewModels
 
         public async Task PageChangeAsync(MenuItem menuItem)
         {
-            await this.NavigationService.NavigateAsync($"{menuItem.PageName}");
+            await this.NavigationService.NavigateAsync($"RootPage/NavigationPage/MainPage/{menuItem.PageName}");
             this.IsPresented = false;
         }
     }

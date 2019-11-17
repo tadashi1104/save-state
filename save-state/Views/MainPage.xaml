@@ -5,10 +5,8 @@
             xmlns:Views="clr-namespace:save_state.Views"
             prism:ViewModelLocator.AutowireViewModel="True"
             x:Class="save_state.Views.MainPage" >
-    <TabbedPage.Children>
-        <Views:CalendarPage />
-        <Views:ListPage />
-        <Views:AnalysisPage />
-        <Views:RegisterPage />
-    </TabbedPage.Children>
+    <Views:CalendarPage />
+    <Views:ListPage />
+    <Views:AnalysisPage />
+    <Views:RegisterPage />
 </TabbedPage>
