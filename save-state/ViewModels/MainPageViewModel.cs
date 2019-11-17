@@ -1,12 +1,17 @@
 ﻿using System;
 using Prism.Mvvm;
+using Prism.Navigation;
 
 namespace save_state.ViewModels
 {
     public class MainPageViewModel : BindableBase
     {
-        public MainPageViewModel()
+
+        private INavigationService NavigationService { get; }
+
+        public MainPageViewModel(INavigationService navigationService)
         {
+            this.NavigationService = navigationService;
         }
     }
 }

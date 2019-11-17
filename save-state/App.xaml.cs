@@ -24,17 +24,18 @@ namespace save_state
         {
             InitializeComponent();
             // Task.Run(() => { NavigationService.NavigateAsync("ListPage"); });
-            await NavigationService.NavigateAsync("RootPage/NavigationPage/MainPage?currentTab=ListPage");
+            await NavigationService.NavigateAsync("RootPage/MainPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
-            containerRegistry.RegisterForNavigation<RootPage, RootPageViewModel>();
-            containerRegistry.RegisterForNavigation<CalendarPage, CalendarPageViewModel>();
-            containerRegistry.RegisterForNavigation<RegisterPage, RegisterPageViewModel>();
-            containerRegistry.RegisterForNavigation<ListPage, ListPageViewModel>();
-            containerRegistry.RegisterForNavigation<AnalysisPage, AnalysisViewModel>();
+            containerRegistry.RegisterForNavigation<MainPage>();
+            containerRegistry.RegisterForNavigation<MenuPage>();
+            containerRegistry.RegisterForNavigation<RootPage>();
+            containerRegistry.RegisterForNavigation<CalendarPage>();
+            containerRegistry.RegisterForNavigation<RegisterPage>();
+            containerRegistry.RegisterForNavigation<ListPage>();
+            containerRegistry.RegisterForNavigation<AnalysisPage>();
             containerRegistry.RegisterForNavigation<NavigationPage>();
         }
     }

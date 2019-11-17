@@ -6,8 +6,18 @@
                   prism:ViewModelLocator.AutowireViewModel="True"
                   x:Class="save_state.Views.RootPage"
                   IsPresented="{Binding IsPresented, Mode=TwoWay}"
+                  NavigationPage.HasNavigationBar="False"
                   Title="Root" >
   <MasterDetailPage.Master>
     <Views:MenuPage />
   </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage Title="RootPage">
+                    <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Root Page"/>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+  </MasterDetailPage.Detail>
 </MasterDetailPage>

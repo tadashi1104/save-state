@@ -4,9 +4,28 @@
             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
             xmlns:Views="clr-namespace:save_state.Views"
             prism:ViewModelLocator.AutowireViewModel="True"
+            NavigationPage.HasNavigationBar="False"
             x:Class="save_state.Views.MainPage" >
-    <Views:CalendarPage />
-    <Views:ListPage />
-    <Views:AnalysisPage />
-    <Views:RegisterPage />
+    
+    <NavigationPage Title="Calendar">
+        <x:Arguments>
+            <Views:CalendarPage Title="Calendar"/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="List">
+        <x:Arguments>
+            <Views:ListPage Title="List"/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Analysis">
+        <x:Arguments>
+            <Views:AnalysisPage Title="Analysis"/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Register">
+        <x:Arguments>
+            <Views:RegisterPage Title="Register"/>
+        </x:Arguments>
+    </NavigationPage>
+
 </TabbedPage>
